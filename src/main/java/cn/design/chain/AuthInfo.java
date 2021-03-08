@@ -1,12 +1,14 @@
 package cn.design.chain;
 
+import lombok.Data;
+
 /**
  * @program: XILIULOU
  * @description:
  * @author: Mr.YG
  * @create: 2021-03-02 15:46
  **/
-
+@Data
 public class AuthInfo {
 
     private String code;
@@ -19,28 +21,4 @@ public class AuthInfo {
         }
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
-    // ...get/set
-
-    @Override
-    public String toString() {
-        return "AuthInfo{" +
-                "code='" + code + '\'' +
-                ", info='" + info + '\'' +
-                '}';
-    }
 }
